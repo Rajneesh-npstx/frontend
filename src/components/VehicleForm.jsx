@@ -37,7 +37,8 @@ function VehicleForm({ onClose, onVehicleCreated }) {
     try {
       setSaving(true);
 
-      const vehicle = await createVehicle(formData);
+      const vehicle = await createVehicle(formData);  //Vehicle editing functionality
+      
 
       onVehicleCreated(vehicle);
       onClose();
