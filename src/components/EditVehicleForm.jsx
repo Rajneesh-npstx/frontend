@@ -19,6 +19,7 @@ function EditVehicleForm({ vehicle, onClose, onVehicleUpdated }) {
       ...previous,
       [name]: value,
     }));
+    
 
     setErrors((previous) => ({
       ...previous,
