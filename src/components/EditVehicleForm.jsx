@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { updateVehicle } from "../services/api";
 
-function EditVehicleForm({ vehicle, onClose, onVehicleUpdated }) {
+function EditVehicleForm({ vehicle, onClose, onVehicleUpdated }) {  //Editing Vehicle details functionality
   const [formData, setFormData] = useState({
     regNumber: vehicle.regNumber,
     model: vehicle.model,
