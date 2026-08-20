@@ -16,6 +16,7 @@ function ServiceRecordForm({
     vehicleId: vehicle.id,
   });
 
+
   const [errors, setErrors] = useState({});
   const [serverError, setServerError] = useState("");
   const [saving, setSaving] = useState(false);
@@ -26,7 +27,9 @@ function ServiceRecordForm({
     setFormData((previous) => ({
       ...previous,
       [name]: value,
+
     }));
+
 
     setErrors((previous) => ({
       ...previous,
@@ -109,6 +112,7 @@ function ServiceRecordForm({
             )}
           </div>
 
+
           <div className="form-group">
             <label htmlFor="description">Description</label>
 
@@ -120,6 +124,8 @@ function ServiceRecordForm({
               value={formData.description}
               onChange={handleChange}
             />
+            
+            
 
             {errors.description && (
               <span className="field-error">{errors.description}</span>
