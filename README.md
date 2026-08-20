@@ -45,3 +45,16 @@ src/
 ├── App.jsx
 ├── App.css
 └── main.jsx
+
+
+
+## Running the Frontend
+
+Navigate to the frontend directory:
+
+```bash
+1. cd frontendDirectory
+
+2. npm install
+
+3. npm run dev
